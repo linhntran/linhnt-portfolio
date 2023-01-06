@@ -12,61 +12,70 @@
 
 <body>
     <header>
-    <!-- Navigation Bar -->
-    <nav class="nav">
-        <h1>Linh Tran</h1>
-        <ul class="navbar">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
-    </nav>
+        <!-- Navigation Bar -->
+        <nav class="nav">
+            <h1>Linh Tran</h1>
+            <ul class="navbar">
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#myprojects">Projects</a></li>
+                <li><a href="#mycontact">Contact</a></li>
+                <li><a href="#myresume">Resume</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <!-- Sidebar for more links? -->
-        <aside></aside>
-
-        <!-- Placeholder for about me -->
-        <div class="about">
+        <!-- About me section -->
+        <div class="about" id="aboutme">
             <h2>About Me</h2>
-            <p>
-                Hello! My name is Linh and I was born and raised in the Greater Seattle area. I have over 10 years of experience in the clinical diagnostics field and currently enrolled in the UW Coding Bootcamp program. Taking this first step in pursuing a completely different field of interest has been no easy feat but is most definitely an interesting one!
+            <img src="assets/images/profile-photo.JPG" id="myphoto" alt="profile photo">
+            <p> Hello! My name is Linh and I was born and raised in the Greater Seattle area. With over 10 years of
+                experience in the clinical diagnostics field, I have taken a big leap by enrolling in the UW Coding
+                Bootcamp program. Taking this first step in pursuing a completely different field of interest has been
+                no easy feat but is most definitely an interesting one!
+            </p>
 
-                In my spare time I love relaxing and cuddling with my labradoodle, Pepper.
+            <p>In my spare time I love relaxing and cuddling with my labradoodle, Pepper. <i
+                    class="fa-solid fa-dog"></i> I also love traveling, especially to Europe with my most beloved
+                destinationing being Italy.
             </p>
         </div>
 
-        <!-- Placeholders for projects -->
-        <!-- <div class="projects">
-            <h2>Projects</h2>
+        <!-- Grid of placeholder projects that should open to a new tab for existing links -->
+        <div class="projects" id="myprojects">
+            <!-- <h2>Projects</h2> -->
             <div class="project-item">
-                first
+                <a href="https://github.com/linhntran/marketing-code-refactor.git" target="_blank"><img src="assets/images/panda.JPG" id="redpanda" alt="red panda"></a>
             </div>
             <div class="project-item">
-                second
+                <a href="" target="_blank"><img src="assets/images/bird.JPG" id="bird" alt="bird"></a>
             </div>
             <div class="project-item">
-                third
+                <a href="" target="_blank"><img src="assets/images/penguin.JPG" id="penguin" alt="penguin"></a>
             </div>
             <div class="project-item">
-                fourth
+                <a href="" target="_blank"><img src="assets/images/meerkat.JPG" id="meerkat" alt="meerkat"></a>
             </div>
-        </div> -->
-
-        <!-- Placeholder for contact -->
-        <div class="contact">
-            <h2>Contact</h2>
-            <li><i class="fa-regular fa-envelope"></i> <a href= "mailto: tran.linhn@gmail.com">Email</a></li>
-            <li><i class="fa-brands fa-linkedin"></i> <a href="www.linkedin.com/in/linhn-tran">LinkedIn</a></li>
-            <li><i class="fa-brands fa-github"></i> <a href="">GitHub</a></li>
         </div>
-        <!-- Place holder for resume link? -->
-        <div class="resume">
 
+        <!-- Contact me section -->
+        <div class="contact" id="mycontact">
+            <h2>Contact</h2>
+            <li><i class="fa-regular fa-envelope"></i> <a href="mailto: tran.linhn@gmail.com">Email</a></li>
+            <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/linhn-tran"
+                    target="_blank">LinkedIn</a></li>
+            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/linhntran" target="_blank">GitHub</a>
+            </li>
+        </div>
+
+        <!-- Place holder for resume link? -->
+        <div class="resume" id="myresume">
+            <h2>Resume</h2>
         </div>
     </main>
+
+    <!-- Sidebar for more links? -->
+    <aside></aside>
 
     <footer>
         <span>Designed by Linh Tran</span>

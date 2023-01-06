@@ -1,9 +1,10 @@
 * {
-    color: #fff;
+    color: #eef0f2;
 }
+
 body {
-    margin: 0;
-    background-color: #280003;
+    margin: 10;
+    background-color: #353b3c;
     font-family: sans-serif;
 }
 
@@ -11,12 +12,8 @@ nav,
 .nav {
     display: flex;
     justify-content: space-between;
-    background-color: #848586;
+    background-color: #846a6a;
     color: black;
-}
-
-.nav h1 {
-
 }
 
 .navbar {
@@ -34,18 +31,31 @@ main {
     flex-wrap: wrap;
 }
 
+#myphoto {
+    width: 300px;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
 }
 
 .project-item {
     flex-grow: 0;
-    background-color: #c2847a;
-    /* width: cal(50% - 5px); */
+    /* background-color: #a2999e; */
+    /* width: 100px; */
     padding: 20px;
+}
+
+img {
+    width: 200px;
+    border: 2px solid #eef0f2;
+}
+
+#redpanda {
+    width: 500px;
 }
 
 .contact {
@@ -53,11 +63,10 @@ main {
 }
 
 footer {
-    display: flex;
+    text-align: center;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
-    /* background-color: #848586; */
     color: #848586;
   }
 
