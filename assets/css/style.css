@@ -49,16 +49,22 @@ main h2 {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 10px;
 }
+
+/* .project-grid img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+} */
 
 .project-grid {
     --gap: 20px;
     --num-cols: 4;
     --row-height 300px: 
     flex-grow: 0;
-    /* box-sizing: border-box; */
     padding: var(--gap);
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
@@ -92,6 +98,13 @@ footer {
     color: #848586;
   }
 
+@media screen and (max-width: 768px) {
+    .project-grid {
+        object-fit: cover;
+        max-width: 50%;
+        height: auto;
+        vertical-align: middle;
+    }
 
 /* for screens under 1024px */
 @media screen and (max-width: 1024px) {
