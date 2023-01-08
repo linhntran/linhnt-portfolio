@@ -36,14 +36,15 @@ main {
 }
 
 main h2 {
-    /* float: left; */
+    text-align: center;
     word-wrap: break-word;
     display: block;
 }
 
-#myphoto {
+.about #myphoto {
     width: 300px;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .projects {
@@ -52,13 +53,6 @@ main h2 {
     justify-content: center;
     gap: 10px;
 }
-
-/* .project-grid img {
-    object-fit: cover;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-} */
 
 .project-grid {
     --gap: 20px;
@@ -79,6 +73,7 @@ main h2 {
     object-fit: cover;
 }
 
+/* esnures hero image is bigger than the rest */
 .hero-col {
     grid-column: span 2;
 }
@@ -93,31 +88,23 @@ main h2 {
 
 footer {
     text-align: center;
-    bottom: 0;
+    margin-bottom: 10px;
     width: 100%;
     color: #848586;
   }
 
-@media screen and (max-width: 768px) {
-    .project-grid {
-        object-fit: cover;
-        max-width: 50%;
-        height: auto;
-        vertical-align: middle;
-    }
-
 /* for screens under 1024px */
 @media screen and (max-width: 1024px) {
     .project-grid {
-        --num-cols: 2;
-        --row-height: 200px;
+        --num-cols: 3;
+        --row-height: 300px;
     }
 }
 
 /* for screens under 768px */
 @media screen and (max-width: 768px) {
     .project-grid {
-        --num-cols: 1;
-        --row-height: 100px;
+        --num-cols: 2;
+        --row-height: 200px;
     }
 }
