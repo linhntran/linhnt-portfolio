@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 10;
+    margin: 0;
     background-color: #353b3c;
     font-family: sans-serif;
 }
@@ -14,6 +14,10 @@ nav,
     justify-content: space-between;
     background-color: #846a6a;
     color: black;
+}
+
+nav h1 {
+    padding: 5px;
 }
 
 .navbar {
@@ -31,8 +35,15 @@ main {
     flex-wrap: wrap;
 }
 
+main h2 {
+    /* float: left; */
+    word-wrap: break-word;
+    display: block;
+}
+
 #myphoto {
     width: 300px;
+    padding: 20px;
 }
 
 .projects {
@@ -42,20 +53,32 @@ main {
     gap: 10px;
 }
 
-.project-item {
+.project-grid {
+    --gap: 20px;
+    --num-cols: 4;
+    --row-height 300px: 
     flex-grow: 0;
-    /* background-color: #a2999e; */
-    /* width: 100px; */
-    padding: 20px;
+    /* box-sizing: border-box; */
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
 }
 
-img {
-    width: 200px;
+.project-grid img {
+    width: 100%;
+    height: 100%;
     border: 2px solid #eef0f2;
+    object-fit: cover;
 }
 
-#redpanda {
-    width: 500px;
+.hero-col {
+    grid-column: span 2;
+}
+
+.hero-row {
+    grid-row: span 2;
 }
 
 .contact {
@@ -64,16 +87,24 @@ img {
 
 footer {
     text-align: center;
-    position: absolute;
-    bottom: 10px;
+    bottom: 0;
     width: 100%;
     color: #848586;
   }
 
-@media screen {
-    
+
+/* for screens under 1024px */
+@media screen and (max-width: 1024px) {
+    .project-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
 }
 
-@media screen and (max-width: 768 px) {
-    
+/* for screens under 768px */
+@media screen and (max-width: 768px) {
+    .project-grid {
+        --num-cols: 1;
+        --row-height: 100px;
+    }
 }
