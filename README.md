@@ -1,30 +1,19 @@
-# linhnt-portfolio
+# Linh Tran's Porfolio
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This week's challenge allows us to utilize our skills build our very own portfolio page showcasing our projects as the course progresses. It was built using skills including but not limited to flexbox, media queries, and CSS variables. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+See below for the direct link to the live page:
 
-## Usage
+[Live Link to Deployed Application](https://linhntran.github.io/linhnt-portfolio/)
 
-Provide instructions and examples for use. Include screenshots as needed.
+The following video demonstrates what the web application looks like once the user navigates to the live page. This also demonstrates how the grid adapts to the screen size as the browser size is adjusted. 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+![A preview of homepage.](./assets/images/preview.gif)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+All photos used in my portfolio grid were taken personally by me, Linh Tran. 
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+Icons for the Contact Me section were provided by [Font Awesome](https://fontawesome.com/)
