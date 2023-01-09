@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 10;
     background-color: #353b3c;
     font-family: sans-serif;
 }
@@ -37,7 +37,7 @@ main {
 
 main h2 {
     text-align: center;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
     display: block;
 }
 
