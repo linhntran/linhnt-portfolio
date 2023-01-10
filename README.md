@@ -17,3 +17,5 @@ The following video demonstrates what the web application looks like once the us
 All photos used in my portfolio grid were taken personally by me, Linh Tran. 
 
 Icons for the Contact Me section were provided by [Font Awesome](https://fontawesome.com/)
+
+Link to tutorial in aiding with grid-resizing [YouTube Tutorial](https://www.youtube.com/watch?v=rnhoY5Cdmy0)
