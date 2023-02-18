@@ -6,71 +6,317 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linh's Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="https://kit.fontawesome.com/c20bdd17f3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <!-- Navigation Bar -->
-        <nav class="nav">
-            <h1>Linh Tran</h1>
-            <ul class="navbar">
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#myprojects">Projects</a></li>
-                <li><a href="#mycontact">Contact</a></li>
-                <li><a href="#myresume">Resume</a></li>
+    <header id="header" class="d-flex flex-column justify-content-center">
+        <nav id="navbar" class="navbar nav-menu">
+            <ul>
+                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
+                </li>
+                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+                <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
+                </li>
+                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                        <span>Portfolio</span></a></li>
+                <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <!-- About me section -->
-        <div class="about" id="aboutme">
-            <h2>About Me</h2>
-            <img src="assets/images/profile-photo.JPG" id="myphoto" alt="profile photo">
-            <p> Hello! My name is Linh and I was born and raised in the Greater Seattle area. With over 10 years of
-                experience in the clinical diagnostics field, I have taken a big leap by enrolling in the UW Coding
-                Bootcamp program. Taking this first step in pursuing a completely different field of interest has been
-                no easy feat but is most definitely an interesting one!
-            </p>
-
-            <p>In my spare time I love relaxing and cuddling with my labradoodle, Pepper. I also love traveling,
-                especially to Europe with my most beloved destinationing being Italy.
-            </p>
-        </div>
-
-        <!-- Grid of placeholder projects that should open to a new tab for existing links -->
-        <div class="projects" id="myprojects">
-            <h2>Projects <p>Click images below to see my work!</p></h2>
-            <div class="project-grid">
-                <a href="https://github.com/dingbat-weasel/Cosmic-Climate.git" target="_blank" class="hero-col hero-row"><img
-                        src="assets/images/panda.JPG" id="redpanda" alt="red panda"></a>
-                <a href="https://github.com/linhntran/marketing-code-refactor.git" target="_blank"><img
-                        src="assets/images/bird.JPG" id="bird" alt="bird"></a>
-                <a href="https://github.com/linhntran/prework-study-guide.git" target="_blank"><img src="assets/images/penguin.JPG" id="penguin" alt="penguin"></a>
-                <a href="https://github.com/linhntran/code-quiz.git" target="_blank"><img src="assets/images/meerkat.JPG" id="meerkat" alt="meerkat"></a>
-                <a href="https://github.com/linhntran/work-day-scheduler.git" target="_blank"><img src="assets/images/monkey.JPG" id="gorilla" alt="family of gorillas"></a>
+    <!-- Hero -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <h1>Linh Tran</h1>
+            <p>I'm a(n) <span class="typed"
+                    data-typed-items="Aspiring Developer, Dog Mom, Traveler, Amateur Photographer"></span></p>
+            <div class="social-links">
+                <a href="https://github.com/linhntran" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/linhn-tran" class="linkedin" target="_blank""><i class=" bx
+                    bxl-linkedin"></i></a>
+                <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+                <a href="https://www.instagram.com/itslings/" class="instagram" target="_blank"><i
+                        class="bx bxl-instagram"></i></a>
             </div>
         </div>
+    </section>
 
-        <!-- Place holder for resume link? -->
-        <!-- <div class="resume" id="myresume">
-            <h2>Resume</h2>
-        </div> -->
+    <main id="main">
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>About</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="./assets/images/profile-photo.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content">
+                        <h3>Health Care Professional &amp; Aspiring Web Developer.</h3>
+                        <p class="fst-italic">
+                            With over 10 years of experience in the clinical diagnostics field, I have taken a big leap
+                            by enrolling in the UW Coding Bootcamp program. Taking this first step in pursuing a
+                            completely different field of interest has been no easy feat but is most definitely an
+                            interesting one!
+                        </p>
+                        <p class="fst-italic">
+                            In my spare time, I love snuggling up with my dog. And when I can get away from the day to
+                            day, you can probably find me on the other side of the Earth exploring history and all the amazing
+                            cultures that the world has to offer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Sumary</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Linh Tran</h4>
+                            <p><em>Currently enrolled in University of Washington's Coding Bootcamp</em></p>
+                            <ul>
+                                <li>Greater Seattle Area</li>
+                            </ul>
+                        </div>
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Bachelor of Science, Chemistry, ACS Certified</h4>
+                            <h5>2006 - 2010</h5>
+                            <p><em>University of Washington, Seattle, WA</em></p>
+                            <p>Coursework include: Spectroscopic Molecular Identification, Spectroscopic Techniques for
+                                Structural Identification, Instrumental Analysis, Chemical Separation Techniques,
+                                Quantitative Analysis, Introduction to Probability and Statistic</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Lab Supervisor I</h4>
+                            <h5>2017 - Present</h5>
+                            <p><em>LabCorp, Seattle, WA </em></p>
+                            <ul>
+                                <li>Assigned, oversaw, and reviewed the work of employees in the clinical Chemistry
+                                    department</li>
+                                <li>Reviewed Quality Control trends of analytes based off of monthly QC reports</li>
+                                <li>Maintained standard operating procedures for the department</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Non-Registered Technician</h4>
+                            <h5>2014 - 2016</h5>
+                            <p><em>LabCorp, Seattle, WA</em></p>
+                            <ul></ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Lab Assistant</h4>
+                            <h5>2012 - 2013</h5>
+                            <p><em>LabCorp, Seattle, WA</em></p>
+                            <ul></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Porfolio/Projects Section -->
+        <section id="portfolio" class="portfolio section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>Check out some of my projects.</p>
+                </div>
+
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="./assets/images/panda.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Cosmic Climate</h4>
+                                <p>a collaborative project</p>
+                                <div class="portfolio-links">
+                                    <a href="./assets/images/panda.JPG" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                                    <a href="https://dingbat-weasel.github.io/Cosmic-Climate/" target="_blank"><i class="bx bx-link"></i></a>
+                                    <a href="https://github.com/dingbat-weasel/Cosmic-Climate.git" target="_blank"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="./assets/images/bird.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Weather Dashbord</h4>
+                                <p>bootcamp assignment</p>
+                                <div class="portfolio-links">
+                                    <a href="./assets/images/bird.JPG" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                                    <a href="https://linhntran.github.io/weather-dashboard/" target="_blank"><i class="bx bx-link"></i></a>
+                                    <a href="https://github.com/linhntran/weather-dashboard.git" target="_blank"><i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="./assets/images/monkey.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Password Generator</h4>
+                                <p>bootcamp assignment</p>
+                                <div class="portfolio-links">
+                                    <a href="./assets/images/monkey.JPG" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                                    <a href="https://linhntran.github.io/password-generator/" target="_blank"><i class="bx bx-link"></i></a>
+                                    <a href="https://github.com/linhntran/password-generator.git" target="_blank"><i class="b- bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="./assets/images/meerkat.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Work Day Scheduler</h4>
+                                <p>bootcamp assignment</p>
+                                <div class="portfolio-links">
+                                    <a href="./assets/images/meerkat.JPG" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                                    <a href="https://linhntran.github.io/work-day-scheduler/" target="_blank"><i class="bx bx-link"></i></a>
+                                    <a href="https://github.com/linhntran/work-day-scheduler.git" target="_blank"><i class="bi bi-github"></i></a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="./assets/images/penguin.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Coming Soon</h4>
+                                <p>more projects on the way</p>
+                                <div class="portfolio-links">
+                                    <a href="./assets/images/penguin.JPG" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                                    <!-- <a href="" target="_blank"><i class="bx bx-link"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="./assets/images/wolf.JPG" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Coming Soon</h4>
+                                <p>more projects on the way</p>
+                                <div class="portfolio-links">
+                                    <a href="./assets/images/wolf.JPG" data-gallery="portfolioGallery"
+                                        class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                                    <!-- <a href="" target="_blank"><i class="bx bx-link"></i></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-lg-4">
+                        <div class="info">
+                            <div class="email">
+                                <a href="mailto: tran.linhn@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+                                <h4>Email:</h4>
+                                <p>tran.linhn@gmail.com</p>
+                            </div>
+
+                            <div class="github">
+                                <a href="https://github.com/linhntran" class="github" target="_blank"><i class="bi bi-github"></i></a>
+                                <h4>GitHub:</h4>
+                                <p>https://github.com/linhntran</p>
+                            </div>
+
+                            <div class="linkedin">
+                                <a href="https://www.linkedin.com/in/linhn-tran" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                                <h4>LinkedIn:</h4>
+                                <p>https://www.linkedin.com/in/linhn-tran</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <!-- Contact me section -->
-        <div class="contact" id="mycontact">
-            <h2>Contact</h2>
-            <li><i class="fa-regular fa-envelope"></i> <a href="mailto: tran.linhn@gmail.com">Email</a></li>
-            <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/linhn-tran"
-                    target="_blank">LinkedIn</a></li>
-            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/linhntran" target="_blank">GitHub</a>
-            </li>
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: [license-url] -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
         </div>
     </footer>
+<!-- 
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a> -->
+
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/c20bdd17f3.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
