@@ -12,6 +12,8 @@ The following video demonstrates what the web application looks like once the us
 
 ![A preview of updated homepage.](./assets/images/new-preview.gif)
 
+What the previous homepage looked like. 
+
 ![A preview of previous homepage.](./assets/images/preview.gif)
 
 ## Credits
